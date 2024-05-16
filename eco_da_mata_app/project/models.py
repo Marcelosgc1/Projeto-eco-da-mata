@@ -32,8 +32,8 @@ class Event(models.Model):
         ART_EXHIBITION = 'AE', ('Art Exhibition'), 
         FESTIVAL = 'FV', ('Festival'),
         OTHERS = 'OT', ('Others')
-    adress = models.CharField(80, null=False) # Using an Address class with fields like city and neighborhood is also a possibility
-    location = models.CharField(100);
+    adress = models.CharField(max_length=80, null=False) # Using an Address class with fields like city and neighborhood is also a possibility
+    location = models.CharField(max_length=100);
     link = models.TextField(null=False); # The approach of an Link class with social media, webpage links and stuff could suit better
     class Format(models.IntegerChoices):
         IN_PERSON = 1, ('IN_PERSON'),
@@ -43,8 +43,7 @@ class Event(models.Model):
 
 
 class Review(models.Model):
-    person_name = models.CharField(80);
-    phrase = models.CharField(100);
+    person_name = models.CharField(max_length=80);
+    phrase = models.CharField(max_length=100);
     class Grade(models.IntegerChoices):
         pass
-    
