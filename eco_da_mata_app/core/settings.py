@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'project',
     'events',
     'edm_app',
+    'reviews',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
