@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'project',
+    'events',
     'edm_app',
     'django.contrib.admin',
     'django.contrib.auth',
